@@ -1,0 +1,25 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  color: #383838;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.user-container {
+  position: absolute;
+  width: 40%;
+  align-items: stretch;
+  min-height: 100vh;
+  overflow-y: hidden;
+  background: #FFD500;
+}
+
+
+.read-the-docs {
+  color: #888;
+}

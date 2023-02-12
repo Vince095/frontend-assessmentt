@@ -1,0 +1,288 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  color: rgba(25, 27, 29, 0.87);
+  background-color: #ffffff;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #ffffff;
+ 
+}
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+  text-align: center;
+  padding: 20px;
+  color:#383838;
+  margin: auto;
+}
+p{
+  margin: auto;
+  width: 60%;
+  font-size: 1.2rem;
+  padding: 0 4px 40px 0 ;
+  text-align: center;
+  color:#383838;
+}
+.face-img{
+  margin: auto;
+  width: 30%;
+  padding: 80px;
+}
+.img-dot{
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  margin: auto;
+  border-radius: 100%;
+  background-color: #383838;
+}
+.img-dot> img{
+  margin: auto ;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  padding: 10px;
+}
+.form{
+  
+  width: 60%;
+  margin-left: auto;
+  padding: 60px 0 0 60px;
+ 
+}
+.form.show{
+  transform: translateX(200px);
+}
+.info-container{
+  width: 60%;
+  height:100vh;
+  margin-left: auto;
+  background-color: #FF9200;
+}
+.info-container>p{
+  text-align: left;
+  margin:auto;
+  font-size: 0.9rem;
+}
+.heading{
+  text-align: left;
+  font-size: x-large;
+  padding-top: 5rem;
+
+}
+.form-group{
+  display: flex;
+  margin: auto;
+  height: 10vh;
+  width: 80%;
+
+
+}
+
+.form-control{
+  height: 40px;
+  width: 67%;
+  padding-left: 20px;
+  border: 0.5px solid transparent;
+  border-radius: 4px;
+  color: #383838;
+  z-index: 0;
+}
+::placeholder{
+  color: #B1BFCD;
+}
+label{
+  padding: 10px;
+  font-size:small;
+  width: 20%;
+  text-align: left;
+  
+}
+
+#gender{
+  color: #B1BFCD;
+}
+#membership{
+  color:#B1BFCD;
+}
+[type = radio]{
+  opacity: 0;
+}
+.radio{
+  min-width: 12%;
+}
+input{
+  background-color: #F5F8F9;
+  color: #B1BFCD;
+}
+input:focus,
+input:focus-visible{
+  outline:1.5px solid #B1BFCD;
+}
+.dot{
+  position: absolute ;
+  background-color:#F5F8F9;
+  border-radius: 100%;  
+  width: 40px;
+  height: 40px;
+  margin: -10px 0 0 -45px;
+  padding: auto;
+  align-items:center;
+
+}
+.active{
+  background-color:#B1BFCD;
+}
+.rotate{
+  rotate: 180deg;
+  transition: 0.2s ease-in-out;
+}
+.normal{
+  rotate: 0;
+  transition: 0.2s ease-in-out;
+}
+.dot> img{
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+
+}
+.custom-date{
+  margin-left: -45px ;
+  margin-top: 9px;
+  height: 20px;
+  background: none;
+  z-index: 0;
+
+}
+::-webkit-calendar-picker-indicator{
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  
+}
+.submit{
+ margin: auto;
+ float: right;
+ padding-right: 15%;
+}
+.cancel-btn{
+  margin:2rem;
+  padding: 15px 30px 15px 30px;
+  background-color:#F5F8F9;
+  border-radius: 4px;
+  border: none;
+}
+.save-btn{
+  margin:auto;
+  padding: 10px 30px 10px 30px;
+  background-color:#60E6C5;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+}
+.error-text{
+  position: relative;
+  height: fit-content;
+  top: 66%;
+  left: 2px;
+  color:#FFBB60;
+  font-size:x-small;
+  z-index: 1;
+  
+  
+}
+.error-box{
+  border: 1.5px solid #FFBB60;
+  z-index:0;
+}
+.error-dot{
+  position: relative;
+  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+  background-color: #FFBB60;
+  top: 15px;
+  
+  
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #B1BFCD;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #B1BFCD;
+    background-color: #efe7e7;
+  }
+  
+  button {
+    background-color: #f9f9f9;
+  }
+}
+/*--- ------------Mobile view ----------------*/
+
+@media (max-width : 480px) {
+
+  .user-container{
+    position:relative;
+    width: 100%;
+    height: 40vh;
+    
+  }
+  .form{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .info-container{
+    width: 100%;
+    margin: auto;
+  }
+
+  .face-img{
+    width: 40%;
+  }
+  .rotate{
+    rotate: 90deg;
+  }
+  .normal{
+    rotate: 270deg;
+  }
+
+  .form-group{
+    
+    margin: 0;
+    min-height: 0;
+    
+  }
+ .form-control{
+
+  flex-direction: column;
+  margin: 0;
+ }
+  
+}
