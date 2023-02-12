@@ -15,7 +15,6 @@ const UserCard = () => {
             icon.classList.add("rotate");
             icon.classList.remove("normal")
         }else{
-            setName("show")
             icon.classList.add("normal");
             icon.classList.remove("rotate");
         }
